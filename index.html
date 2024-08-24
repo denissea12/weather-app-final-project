@@ -14,15 +14,16 @@
 <body>
     <div class="weather-app">
         <header>
-            <form class="search-from">
-                <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+            <form class="search-from" id="search-form">
+                <input type="search" placeholder="Enter a city..." required id="search-form-input"
+                    class="search-form-input" />
                 <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-app-city">
+                    <h1 class="weather-app-city" id="city">
                         Mexico City</h1>
                     <p class="weather-app-details">
                         Saturday 8:42, mostly cloudy
@@ -44,6 +45,7 @@
             <a href="https://main--weather-app-blues.netlify.app/" target="_blank">Netlify</a>
         </footer>
     </div>
+    <script src="src/script.js"></script>
 </body>
 
 </html>
