@@ -14,21 +14,27 @@
 <body>
     <div class="weather-app">
         <header>
-            <form>
-                <input type="search" placeholder="Enter a city..." required />
-                <input type="submit" value="Search" />
+            <form class="search-from">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
-            <h1>
-                Mexico City</h1>
-            <p>
-                Saturday 8:42, mostly cloudy
-                <br />
-                Humidity: 92%, Wind: 6mph
-            </p>
-            <div>
-                ☀️60°F</div>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city">
+                        Mexico City</h1>
+                    <p class="weather-app-details">
+                        Saturday 8:42, mostly cloudy
+                        <br />
+                        Humidity: <strong>92%</strong>, Wind: <strong>6mph</strong>
+                    </p>
+                </div>
+
+                <div class="weather-app-temp-container">
+                    <div class="weather-app-icon">☀️</div>
+                    <div class="weather-app-temperature">60</div>
+                    <div class="weather-app-unit">°F</div>
         </main>
 
         <footer>
