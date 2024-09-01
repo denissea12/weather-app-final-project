@@ -34,7 +34,9 @@ function formatDate(date) {
   ];
 
   let day = days[date.getDay()];
-
+  if (hours > 12) {
+    hours = hours - 12;
+  }
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
